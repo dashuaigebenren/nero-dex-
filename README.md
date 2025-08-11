@@ -1,4 +1,4 @@
-# NERO DEX - 基于Uniswap V3的NERO链去中心化交易所
+# NERO DEX - 基于Uniswap V3的NERO链去中心化交易所（学习测试版）
 
 ## 📖 项目简介
 
