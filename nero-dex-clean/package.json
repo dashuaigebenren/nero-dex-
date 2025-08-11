@@ -1,0 +1,41 @@
+{
+  "name": "nero-dex",
+  "version": "1.0.0",
+  "description": "基于Uniswap V3的NERO链DEX",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:testnet": "hardhat run scripts/deploy.ts --network nero-testnet",
+    "deploy:mainnet": "hardhat run scripts/deploy.ts --network nero-mainnet",
+    "deploy:local": "hardhat run scripts/deploy.ts --network localhost",
+    "deploy:mumbai": "hardhat run scripts/deploy.ts --network polygon-mumbai",
+    "deploy:bsc-testnet": "hardhat run scripts/deploy.ts --network bsc-testnet",
+    "verify": "hardhat run scripts/verify.ts",
+    "verify:mumbai": "hardhat verify --network polygon-mumbai",
+    "verify:bsc-testnet": "hardhat verify --network bsc-testnet",
+    "node": "hardhat node",
+    "node:start": "hardhat node --port 8545",
+    "check-networks": "hardhat console --network nero-testnet"
+  },
+  "keywords": ["dex", "uniswap", "nero", "defi", "amm"],
+  "author": "NERO DEX Team",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.0",
+    "@typechain/ethers-v6": "^0.5.0",
+    "@typechain/hardhat": "^9.0.0",
+    "@types/node": "^20.0.0",
+    "hardhat": "^2.19.0",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0"
+  },
+  "dependencies": {
+    "@uniswap/v3-core": "^1.0.1",
+    "@uniswap/v3-periphery": "^1.4.4",
+    "@openzeppelin/contracts": "^4.9.0",
+    "ethers": "^6.8.0",
+    "dotenv": "^16.3.0"
+  }
+} 
